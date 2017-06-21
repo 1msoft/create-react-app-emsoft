@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts",
-  "version": "1.0.7",
-  "description": "Configuration and scripts for Create React App.",
-  "repository": "facebookincubator/create-react-app",
+  "name": "react-scripts-emsoft",
+  "version": "1.0.5",
+  "description": "Custom React scripts for Create React App.",
+  "repository": "1msoft/react-scripts-emsoft",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/facebookincubator/create-react-app/issues"
+    "url": "https://github.com/1msoft/react-scripts-emsoft/issues"
   },
   "files": [
     "bin",
@@ -26,14 +26,14 @@
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.0.0",
-    "babel-preset-react-app": "^3.0.0",
+    "babel-preset-react-app": "https://github.com/1msoft/babel-preset-emsoft.git",
     "babel-runtime": "6.23.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "chalk": "1.1.3",
     "css-loader": "0.28.1",
     "dotenv": "4.0.0",
     "eslint": "3.19.0",
-    "eslint-config-react-app": "^1.0.4",
+    "eslint-config-react-app": "https://github.com/1msoft/eslint-config-emsoft.git",
     "eslint-loader": "1.7.1",
     "eslint-plugin-flowtype": "2.33.0",
     "eslint-plugin-import": "2.2.0",
