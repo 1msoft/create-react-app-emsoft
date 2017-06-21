@@ -1,7 +1,7 @@
 {
   "name": "react-scripts-emsoft",
   "version": "1.0.8",
-  "description": "Configuration and scripts for Create React App.",
+  "description": "Custom React scripts for Create React App.",
   "repository": "1msoft/react-scripts-emsoft",
   "license": "BSD-3-Clause",
   "engines": {
