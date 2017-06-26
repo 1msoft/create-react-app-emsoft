@@ -21,7 +21,7 @@ const path = require('path');
 const chalk = require('chalk');
 const spawn = require('react-dev-utils/crossSpawn');
 
-module.exports = function(
+module.exports = function (
   appPath,
   appName,
   verbose,
@@ -36,6 +36,10 @@ module.exports = function(
   const ownPath = path.join(appPath, 'node_modules', ownPackageName);
   const appPackage = require(path.join(appPath, 'package.json'));
   const useYarn = fs.existsSync(path.join(appPath, 'yarn.lock'));
+
+  const initElectron = require('./init.electron')
+
+  initElectron(appName, appPackage, useYarn)
 
   // Copy over some of the devDependencies
   appPackage.dependencies = appPackage.dependencies || {};
