@@ -37,9 +37,7 @@ module.exports = function (
   const appPackage = require(path.join(appPath, 'package.json'));
   const useYarn = fs.existsSync(path.join(appPath, 'yarn.lock'));
 
-  const initElectron = require('./init.electron')
 
-  initElectron(appName, appPackage, useYarn)
 
   // Copy over some of the devDependencies
   appPackage.dependencies = appPackage.dependencies || {};
@@ -51,19 +49,21 @@ module.exports = function (
     build: 'react-scripts build',
     test: 'react-scripts test --env=jsdom',
     eject: 'react-scripts eject',
-  };
+  }
+  const initElectron = require('./init.electron')
+  initElectron(appName, appPackage, useYarn)
 
   fs.writeFileSync(
     path.join(appPath, 'package.json'),
     JSON.stringify(appPackage, null, 2)
-  );
+  )
 
   const readmeExists = fs.existsSync(path.join(appPath, 'README.md'));
   if (readmeExists) {
     fs.renameSync(
       path.join(appPath, 'README.md'),
       path.join(appPath, 'README.old.md')
-    );
+    )
   }
 
   // Copy the files for the user
