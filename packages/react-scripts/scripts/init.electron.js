@@ -4,8 +4,9 @@
 const spawn = require('react-dev-utils/crossSpawn');
 
 module.exports = function (appName, appPackage, useYarn) {
-    appPackage.main = './src/main.js'
-    appPackage.scripts.electron = 'electron .'
+    appPackage.main = './electron/main.js'
+    appPackage.homepage = '.'
+    appPackage.scripts.electron = './node_modules/.bin/electron . --debug'
     appPackage.build = {
         "productName": appName,
         "appId": "org.emsoft." + appName,
