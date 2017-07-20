@@ -58,7 +58,7 @@ module.exports = function (appName, appPackage, useYarn) {
         command = 'npm';
         args = ['install', '--save-dev'].filter(e => e);
     }
-    args.push('electron', 'electron-builder');
+    args.push('electron', 'electron-builder', 'devtron');
 
     const proc = spawn.sync(command, args, { stdio: 'inherit' });
     if (proc.status !== 0) {
