@@ -1,6 +1,6 @@
 {
   "name": "react-scripts-emsoft-electron",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Custom React scripts for Electron Apps.",
   "repository": "1msoft/react-scripts-emsoft",
   "license": "BSD-3-Clause",
@@ -26,7 +26,7 @@
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
     "babel-loader": "7.0.0",
-    "babel-preset-react-app": "^3.0.0",
+    "babel-preset-emsoft": "^1.0.1",
     "babel-runtime": "6.23.0",
     "case-sensitive-paths-webpack-plugin": "1.1.4",
     "chalk": "1.1.3",
